@@ -7,7 +7,7 @@ import {Passenger} from '../../containers/models/passenger.interface';
     template: `
     <div>
     <h3>Airline Passengers</h3>
-    <p>Passengers Checked-In:  {{checkedInCount()}}/{{items.length}}</p>
+    <p>Passengers Checked-In:  {{checkedInCount()}}/{{items?.length}}</p>
     </div>
     `
 })
@@ -19,6 +19,7 @@ export class PassengerCountComponent{
 
     constructor(){}
     checkedInCount(): number{
+        if(!this.items) return;
        return this.items.filter((passenger:Passenger) => passenger.checkedIn).length;
     }
 }
