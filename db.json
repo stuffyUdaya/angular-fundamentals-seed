@@ -1,9 +1,31 @@
 {
-    "passengers":[
-        { "id":1, "fullName": "Ross", "checkedIn": true, "checkInDate" : 1571789583433, "children": [{"name":"Rose","age": 5}, {"name": "Ronald", "age": 15}] },
-        {"id":2, "fullName": "Dan", "checkedIn": false},
-        {"id":3, "fullName": "Thomas", "checkedIn": true, "checkInDate": 1502269725, "children": [{"name":"Alex","age": 15}, {"name": "Kurt", "age": 5}]},
-        {"id":4, "fullName": "Thanos", "checkedIn": true, "checkInDate": 1571847484816, "children": [{"name":"Alex","age": 15}, {"name": "Kurt", "age": 5}]}
-
-    ]
+  "passengers": [
+    {
+      "fullName": "Ross",
+      "id": 1,
+      "checkedIn": true,
+      "baggage": "hand-hold",
+      "checkInDate": 1571789583433
+    },
+    {
+      "id": 2,
+      "fullName": "Dan",
+      "checkedIn": false,
+      "baggage": ""
+    },
+    {
+      "id": 3,
+      "fullName": "Thomas",
+      "checkedIn": true,
+      "checkInDate": 1502269725,
+      "baggage": ""
+    },
+    {
+      "id": 4,
+      "fullName": "Thanos",
+      "checkedIn": true,
+      "checkInDate": 1571847484816,
+      "baggage": ""
+    }
+  ]
 }

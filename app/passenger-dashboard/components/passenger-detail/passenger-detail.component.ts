@@ -19,7 +19,6 @@ import { Passenger } from '../../containers/models/passenger.interface';
     <div *ngIf=!editing>{{detail.fullName}}</div>
     <div>
     <p> checkedInDate:{{(detail.checkedIn) ? (detail.checkInDate | date:'fullDate' | uppercase) : 'Not checked In.'}} </p>
-    <p>Children: {{detail.children?.length || 0}} </p>
     </div>
     <div>
     <button (click)="toggleEdit()">{{(editing)? 'Done' : 'Edit'}}</button>
